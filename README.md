@@ -1,30 +1,19 @@
-# React + TypeScript + Vite
+Forgecraft - an NFT game using ERC1155 implementation of minting and forging NFTs
+Next Js, Wagmi, Antd
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mint Resources, Craft Resources, and Burn Resources
 
-Currently, two official plugins are available:
+Deployed on the Polygon Blockchain
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Game contract = "0xa1cF67B0913fe247CC1fe56F3A805b3218959D59"
+Forge contract = "0xF36A1B79162e0612FadC528f777113AA8b137D45"
 
-## Expanding the ESLint configuration
+<img width="1440" alt="Screenshot 2023-11-29 at 2 49 15 PM" src="https://github.com/bicced/Forgecraft/assets/20571074/369a4e08-82a0-4002-8cfe-d58c0ef855b0">
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+yarn install
+yarn dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
