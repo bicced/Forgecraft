@@ -1,7 +1,7 @@
-Forgecraft - an NFT game using ERC1155 implementation of minting and forging NFTs
-Next Js, Wagmi, Antd
-
+Forgecraft - an example implementation of ERC1155 for games:
 Mint Resources, Craft Resources, and Burn Resources
+
+Frontend built using - Next Js, Wagmi, Antd
 
 Deployed on the Polygon Blockchain
 
@@ -17,3 +17,6 @@ yarn install
 yarn dev
 ```
 
+The contract folder contains the Game and Forge contracts used
+
+The NFTSetup folder contains the images and metadata used - currently hosting on IPFS
