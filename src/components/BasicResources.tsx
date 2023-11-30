@@ -1,4 +1,3 @@
-import React from "react";
 import { Col, Row } from "antd";
 import BasicResource from "./BasicResource";
 import { CoinType } from "../utils";

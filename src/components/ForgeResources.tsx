@@ -1,7 +1,7 @@
-import React, { useContext, useState } from "react";
-import { Col, Row, Image, Checkbox, Modal, Divider } from "antd";
+import { useContext, useState } from "react";
+import { Col, Row, Image, Modal, Divider } from "antd";
 import { CoinType } from "../utils";
-import { Label, StyledButton, StyledCard, StyledCheckbox, Subtitle, Title } from "../utils/styles";
+import { Label, StyledButton, StyledCard, StyledCheckbox, Subtitle } from "../utils/styles";
 import { store } from "../utils/store";
 import { FORGE_CONTRACT } from "../utils/abi";
 import { useContractWrite, useWaitForTransaction } from "wagmi";

@@ -136,7 +136,7 @@ export default function Home() {
       <FloatButton.Group shape="square" style={{ left: 20 }}>
         <FloatButton className="clickable" tooltip="Need Help?" onClick={() => setShowAboutModal(true)} icon={<QuestionCircleOutlined />} />
         <FloatButton className="clickable" tooltip="View on Opensea"  icon={OpenseaOutlined} onClick={() => window.open("https://opensea.io/collection/unidentified-contract-11895")} />
-        <FloatButton className="clickable" tooltip="View on Github" icon={<GithubOutlined />} onClick={() => window.open("https://github.com/bicced/Forge_Craft")} />
+        <FloatButton className="clickable" tooltip="View on Github" icon={<GithubOutlined />} onClick={() => window.open("https://github.com/bicced/Forgecraft")} />
       </FloatButton.Group>
       {renderHelpModal()}
       <Pointer />

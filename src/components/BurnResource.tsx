@@ -1,5 +1,5 @@
-import React, { useContext, useState } from "react";
-import { Row, Image, Modal, Checkbox, Divider } from "antd";
+import { useContext, useState } from "react";
+import { Row, Image, Modal } from "antd";
 import { CoinType } from "../utils";
 import { Subtitle, StyledButton, StyledCard, Label, StyledCheckbox } from "../utils/styles";
 import { store } from "../utils/store";
@@ -53,7 +53,7 @@ export default ({openNotification}: any) => {
                   <div style={{maxWidth: 100, textAlign: 'center'}}>
                     <Label>{state.metadata[value]?.name}</Label>
                     <Image src={state.metadata[value]?.image}></Image>
-                    <StyledCheckbox checked={selectedResource === value} value={value} onChange={(e) => setSelectedResource(value)} />
+                    <StyledCheckbox checked={selectedResource === value} value={value} onChange={() => setSelectedResource(value)} />
                   </div>
                 )
               }
