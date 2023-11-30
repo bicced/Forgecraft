@@ -3,7 +3,7 @@ Mint Resources, Craft Resources, and Burn Resources
 
 Frontend built using - Next Js, Wagmi, Antd
 
-**Hosted on: **
+**Hosted on:**
 https://forgecraft-15105.web.app/
 
 **Contracts on the Polygon Blockchain:**
