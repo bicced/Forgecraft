@@ -1,5 +1,5 @@
-import styled, { css, keyframes } from 'styled-components';
-import { Button, Card, Menu, Select, Checkbox } from 'antd';
+import styled from 'styled-components';
+import { Button, Menu, Select, Checkbox } from 'antd';
 import logourl from './assets/logo.svg';
 
 const LEAVES_BACKGROUND_URL = "https://ipfs.io/ipfs/QmbD9np6QsXSJFqYmQz6o4op3TJdouxkmmyTic1bHLTZaD";

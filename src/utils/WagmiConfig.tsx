@@ -1,5 +1,5 @@
 import { WagmiConfig, createConfig, configureChains } from "wagmi";
-import { localhost, mainnet, polygon } from 'wagmi/chains'
+import { polygon } from 'wagmi/chains'
 import { publicProvider } from "wagmi/providers/public";
 import { InjectedConnector } from "wagmi/connectors/injected";
 

@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { useAccount, useConnect, useDisconnect, useNetwork, useSwitchNetwork } from 'wagmi';
 import { Logo, Navigation, StyledButton } from '../utils/styles';
-import { Button, Divider, Modal, Row, Select, Tour, TourProps } from 'antd';
+import { Divider, Row, Select, Tour, TourProps } from 'antd';
 
 export default () => {
   const { isConnected } = useAccount();
@@ -39,18 +39,6 @@ export default () => {
   useEffect(() => {
     _setConnectors(connectors);
   }, [connectors]);
-
-  function desktopMenu() {
-    return (
-      <div></div>
-    )
-  };
-
-  function mobileMenu() {
-    return (
-      <div></div>
-    )
-  }
 
   function connectButton() {
     function selectConnector(id: string) {

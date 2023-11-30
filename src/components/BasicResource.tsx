@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { useAccount, useContractWrite, useWaitForTransaction } from "wagmi";
 import { GAME_CONTRACT } from "../utils/abi";
 import { Col, Divider, Modal, Row, Image } from "antd";
