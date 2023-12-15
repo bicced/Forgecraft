@@ -1,9 +1,11 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { useAccount, useConnect, useDisconnect, useNetwork, useSwitchNetwork } from 'wagmi';
-import { Logo, Navigation, StyledButton } from '../utils/styles';
+import { Icon, Logo, Navigation, StyledButton } from '../utils/styles';
 import { Divider, Row, Select, Tour, TourProps } from 'antd';
+import { useWindowWidth } from '../utils/window';
 
 export default () => {
+  const mobile = useWindowWidth() < 500;
   const { isConnected } = useAccount();
   const { connect, connectors } = useConnect();
   const { chain } = useNetwork()
@@ -97,7 +99,7 @@ export default () => {
 
   return (
     <Navigation>
-      <Logo />
+      {mobile ? <Icon /> : <Logo />}
       {renderConnection()}
     </Navigation>
   );

@@ -11,7 +11,7 @@ import ForgeResources from "./components/ForgeResources";
 import BurnResource from "./components/BurnResource";
 import Pointer from "./utils/Pointer";
 import { GithubOutlined, QuestionCircleOutlined } from "@ant-design/icons";
-import {OpenseaOutlined} from "./utils/assets/svg";
+import {OpenseaOutlined, PolygonOutlined} from "./utils/assets/svg";
 
 const Context = React.createContext({ name: 'Default' });
 
@@ -135,6 +135,7 @@ export default function Home() {
       </Container>
       <FloatButton.Group shape="square" style={{ left: 20 }}>
         <FloatButton className="clickable" tooltip="Need Help?" onClick={() => setShowAboutModal(true)} icon={<QuestionCircleOutlined />} />
+        <FloatButton className="clickable" tooltip="View on Polygonscan" icon={PolygonOutlined} onClick={() => window.open("https://polygonscan.com/address/0xa1cf67b0913fe247cc1fe56f3a805b3218959d59")} />
         <FloatButton className="clickable" tooltip="View on Opensea"  icon={OpenseaOutlined} onClick={() => window.open("https://opensea.io/collection/unidentified-contract-11895")} />
         <FloatButton className="clickable" tooltip="View on Github" icon={<GithubOutlined />} onClick={() => window.open("https://github.com/bicced/Forgecraft")} />
       </FloatButton.Group>

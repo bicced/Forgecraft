@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Button, Menu, Select, Checkbox } from 'antd';
 import logourl from './assets/logo.svg';
+import iconurl from './assets/icon.svg';
 
 const LEAVES_BACKGROUND_URL = "https://ipfs.io/ipfs/QmbD9np6QsXSJFqYmQz6o4op3TJdouxkmmyTic1bHLTZaD";
 
@@ -11,7 +12,12 @@ export const Body = styled.div`
 `;
 
 export const Logo = styled(({...props}) => <img alt="logo" src={logourl} {...props}/>)`
-  max-height: 40px;
+  max-height: 35px;
+  width: auto;
+`;
+
+export const Icon = styled(({...props}) => <img alt="icon" src={iconurl} {...props}/>)`
+  max-height: 35px;
   width: auto;
 `;
 
